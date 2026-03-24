@@ -1,0 +1,61 @@
+@if (tutorialStep && tutorialStep.type == 'explanation') {
+  <div class="tutorial-step-container">
+    <div class="container" [style.top]="tutorialStep.textPosition">
+      <div class="tutorial-text">
+        {{ tutorialStep.text }}
+      </div>
+
+      @if (!tutorialService.canReturn()) {
+      <button class="action-button" (click)="onNextClick()">Weiter ➔</button>
+    } @else {
+      <button class="action-button" (click)="tutorialService.returnToTask()">Zurück zur Abfrage</button>
+    }
+    </div>
+
+    <img class="tutorial-image" [src]="tutorialStep.imageUrl" />
+  </div>
+  @for (zone of tutorialStep.zones; track $index) {
+    <div
+      class="zone"
+      [style.left]="zone.x"
+      [style.top]="zone.y"
+      [style.width]="zone.width"
+      [style.height]="zone.height"
+      [style.border-color]="zone.color || 'red'"
+      [style.pointer-events]="'none'"
+    ></div>
+  }
+} @else if (tutorialStep && tutorialStep.type == 'task') {
+  <div class="tutorial-step-container">
+    <div class="container"  [style.top]="tutorialStep.textPosition">
+      <div class="tutorial-text">
+        {{ success ? tutorialStep.successText : tutorialStep.text }}
+      </div>
+
+      @if (success) {
+        <button class="action-button" (click)="onNextClick()">Weiter ➔</button>
+      } @else {
+        <button class="action-button" (click)="tutorialService.goToLinkedExplanation()">Nochmal zur Erklärung</button>
+      }
+    </div>
+
+    <img
+      class="tutorial-image"
+      [src]="success ? tutorialStep.successImageUrl : tutorialStep.imageUrl"
+    />
+  </div>
+  @for (zone of tutorialStep.zones; track $index) {
+    @if (!success) {
+      <div
+        class="zone"
+        [style.left]="zone.x"
+        [style.top]="zone.y"
+        [style.width]="zone.width"
+        [style.height]="zone.height"
+        [style.border-color]="tutorialStep.type == 'task' ? 'transparent' : 'red'"
+        [style.backdrop-filter]="tutorialStep.type == 'task' ? 'none' : 'brightness(2)'"
+        (click)="onSuccess()"
+      ></div>
+    }
+  }
+}

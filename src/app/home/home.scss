@@ -1,0 +1,22 @@
+.home-page {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+#startButton {
+    width: 100%;
+}
