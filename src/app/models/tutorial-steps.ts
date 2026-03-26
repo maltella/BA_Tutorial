@@ -4,7 +4,7 @@ export const tutorialSteps: TutorialStep[] = [
   {
     id: 'homeexpl',
     type: 'explanation',
-    text: 'Das ist der Hauptbildschirm, so sieht es aus wenn Sie ChatGPT starten. Hier haben Sie alle Funktionen direkt verfügbar. Welche das sind wird Ihnen nun Schritt für Schritt gezeigt. Dafür werde ich die jeweils beschriebene Funktion rot einrahmen, wie jetzt den ganzen Bildschirm und kurz erklären.',
+    text: 'Das ist der Hauptbildschirm, so sieht es aus wenn Sie ChatGPT starten. Hier haben Sie alle Funktionen direkt verfügbar. Welche das sind wird Ihnen nun Schritt für Schritt gezeigt. Dafür werden die jeweils beschriebene Funktion rot eingerahmt, wie jetzt der gesamte Bildschirm und kurz erklärt.',
     textPosition: '20%',
     imageUrl: 'images/home.jpg',
     zones: [{ x: '0', y: '0', width: '100%', height: '100%' }],
@@ -41,7 +41,7 @@ export const tutorialSteps: TutorialStep[] = [
     id: 'voiceinputexpl',
     type: 'explanation',
     linkedTaskId: 'voiceinputtask',
-    text: 'Das Mikrofon aktiviert die Spracheingabe. Sie können dann einfach in ihr Gerät sprechen, anstatt tippen zu müssen.',
+    text: 'Das Mikrofon aktiviert die Spracheingabe. Sie können dann einfach in ihr Gerät sprechen, anstatt zu tippen.',
     textPosition: '20%',
     imageUrl: 'images/home.jpg',
     zones: [{ x: '70%', y: '87.5%', width: '11%', height: '6%' }],
@@ -144,7 +144,7 @@ export const tutorialSteps: TutorialStep[] = [
   {
     id: 'vorherigechatsmenuexpl',
     type: 'explanation',
-    text: 'In diesem Menü sehen Sie ihre vorherigen Chats mit ChatGPT und können diese auch wieder aufnehmen, wenn Sie möchten. Unten rechts gibt es noch die Möglichkeit einen neuen Chat anzufangen. Dies empfiehlt sich meistens wenn Sie mit einem neuen Thema beginnen möchten. So fällt auch das nachsehen in alten Chats leichter.',
+    text: 'In diesem Menü sehen Sie ihre vorherigen Chats mit ChatGPT und können diese auch wieder aufnehmen, wenn Sie möchten. Unten rechts gibt es die Möglichkeit einen neuen Chat anzufangen. Dies empfiehlt sich meistens wenn Sie mit einem neuen Thema beginnen möchten. So fällt auch das nachsehen in alten Chats leichter.',
     textPosition: '10%',
     imageUrl: 'images/vorherigechats.jpg',
     zones: [{ x: '2%', y: '46%', width: '63%', height: '44%' }, { x: '67.65%', y: '84.9%', width: '28%', height: '8%' }],
