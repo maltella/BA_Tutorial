@@ -6,7 +6,7 @@
 2. Projektordner BA_Tutorial in VSCode öffnen.
 3. Falls nicht bereits automatisch geschehen, die Extension "Angular Language Service" installieren.
 4. Konsole öffnen und ng serve eingeben.
-5. Auf den lokal Host Link klicken, wodruch die Anwendung im Browser gesttartet wird.
+5. Auf den lokal Host Link klicken, wodurch die Anwendung im Browser gestartet wird.
 6. STRG+Shift+M drücken, dies öffnet die Smartphone Ansicht im Browser.
 7. In der Leiste oben benutzerdefiniertes Gerät mit den Maßen 393x852 erstellen.
 8. Jetzt kann in der besten Umgebung mit dem Tutorial begonnen werden.
