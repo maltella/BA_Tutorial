@@ -1,5 +1,16 @@
 # BATutorial
 
+## Einrichtung für den lokalen betrieb des Tutorials
+
+1. VSCode installieren.
+2. Projektordner BA_Tutorial in VSCode öffnen.
+3. Falls nicht bereits automatisch geschehen, die Extension "Angular Language Service" installieren.
+4. Konsole öffnen und ng serve eingeben.
+5. Auf den lokal Host Link klicken, wodruch die Anwendung im Browser gesttartet wird.
+6. STRG+Shift+M drücken, dies öffnet die Smartphone Ansicht im Browser.
+7. In der Leiste oben benutzerdefiniertes Gerät mit den Maßen 393x852 erstellen.
+8. Jetzt kann in der besten Umgebung mit dem Tutorial begonnen werden.
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.2.
 
 ## Development server
